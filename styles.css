@@ -48,3 +48,22 @@ footer{margin-top:12px;color:var(--muted);font-size:0.95rem}
     header{flex-direction:row;align-items:center;justify-content:space-between}
     #introduction{padding:28px}
 }
+
+/* Footer styles */
+.site-footer{margin-top:32px;padding:28px 0 20px;background:transparent;color:#0f172a}
+.footer-grid{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+.footer-brand .logo{width:56px;height:56px;border-radius:10px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem}
+.footer-brand .brand-desc{margin:8px 0 0;color:#334155}
+.footer-links h4,.footer-contact h4{margin:0 0 8px 0}
+.footer-links ul{list-style:none;padding:0;margin:0}
+.footer-links a{color:#0b3a66;text-decoration:none}
+.footer-contact a{color:var(--accent);text-decoration:none}
+.footer-bottom{display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:space-between;padding-top:18px;border-top:1px solid rgba(15,23,42,0.05)}
+.socials{display:flex;gap:12px}
+.social-link{color:var(--muted);display:inline-flex;align-items:center;justify-content:center;padding:6px;border-radius:8px;background:rgba(11,58,102,0.04);text-decoration:none}
+.social-link svg{display:block}
+
+@media (min-width:820px){
+    .footer-grid{grid-template-columns:1fr 120px 180px}
+    .footer-bottom{flex-direction:row}
+}
